@@ -1,0 +1,11 @@
+.english-title-question {
+    margin: 25px 5px;
+    color: black;
+    font-size: 25px;
+    background-color:rgba(241, 234, 234, 0.43);
+  }
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

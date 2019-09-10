@@ -1,0 +1,57 @@
+.zivotinje2{
+    background: url("farm2.png") ;
+    background-size: auto;
+    background-size: 100% 100%;
+   width: 100%;
+   height: 100%;
+}
+.section-zivotinje {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 450px;
+    height: 220px;
+    background-color:rgba(241, 234, 234, 0.43);
+    margin-top: 20px;
+}
+.text-section-zivotinje2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color:rgba(241, 234, 234, 0.43);
+}
+
+.slike-zivotinja {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+}
+
+.zivotinje-container {
+    text-align: center;
+    width: 230px;
+    height: 250px;
+    background-color: rgba(241, 234, 234, 0.43);
+    font-size: 20px;
+    border: 1px solid black;
+   
+}
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.uspeh {
+    text-align: center;
+    font-size: 29px;
+    color: green;
+}
+
+.neuspeh {
+    text-align: center;
+    font-size: 29px;
+    color: red;
+}

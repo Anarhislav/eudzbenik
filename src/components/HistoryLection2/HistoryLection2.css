@@ -1,0 +1,19 @@
+.background-page2{
+    background: url("part2.png") ;
+    background-size: auto;
+    background-size: 100% 100%;
+   width: 100%;
+   height: 100%;
+   
+  }
+
+  .iframeClass body{
+      background-color: none;
+  }
+
+  .textSection {
+    padding: 50px;
+    color: white;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
