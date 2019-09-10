@@ -8,15 +8,14 @@ import konj from "./konjn.gif";
 import kornjaca from "./kornjacan.gif";
 import koza from "./kozan.gif";
 class FarmLectionTwo extends Component {
-
-    state = {
-        detlic: "container",
-        divljasvinja: "container",
-        kokoska: "container",
-        konj: "container",
-        kornjaca: "container",
-        koza: "container"
-    }
+  state = {
+    detlic: "container",
+    divljasvinja: "container",
+    kokoska: "container",
+    konj: "container",
+    kornjaca: "container",
+    koza: "container"
+  };
   dragstart_handler = event => {
     event.dataTransfer.dropEffect = "move";
     event.dataTransfer.setData("id", event.target.id);
@@ -25,7 +24,6 @@ class FarmLectionTwo extends Component {
   onDragOver = event => {
     event.stopPropagation();
     event.preventDefault();
-    // console.log(event.dataTransfer.getData("text/html"));
   };
 
   onDragEnter = event => {
@@ -35,42 +33,45 @@ class FarmLectionTwo extends Component {
   onFileDrop = (type, event) => {
     event.stopPropagation();
     let data = event.dataTransfer.getData("id");
-    event.target.appendChild(document.getElementById(data));
-    switch(type){
-        case 'domace': {
-
-            this.setState({
-                ...this.state,
-                [data]: type
-            })
-            break;
+    if (
+      event.target != document.getElementById(data) &&
+      event.target.tagName != "IMG"
+    ) {
+      event.target.appendChild(document.getElementById(data));
+      switch (type) {
+        case "domace": {
+          this.setState({
+            ...this.state,
+            [data]: type
+          });
+          break;
         }
-        case 'divlje': {
-            this.setState({
-                ...this.state,
-                [data]: type
-            })
-            break;
+        case "divlje": {
+          this.setState({
+            ...this.state,
+            [data]: type
+          });
+          break;
         }
-        case 'container': {
-            this.setState({
-                ...this.state,
-                [data]: type
-            })
-            break;
+        case "container": {
+          this.setState({
+            ...this.state,
+            [data]: type
+          });
+          break;
         }
+      }
     }
   };
 
   render() {
-      console.log(this.state);
-      let porukaUspeha = (<div className="uspeh">Uspesno si uradio zadatak</div>)
-      let porukaNeuspeha = <div className="neuspeh">Pokusaj ponovo</div>
-      let poruka = checkAnswer(this.state) ? porukaUspeha : porukaNeuspeha;
+    let porukaUspeha = <div className="uspeh">Uspešno si uradio zadatak</div>;
+    let porukaNeuspeha = <div className="neuspeh">Pokušaj ponovo</div>;
+    let poruka = checkAnswer(this.state) ? porukaUspeha : porukaNeuspeha;
     return (
       <div className="zivotinje2">
         <div className="text-section-zivotinje2">
-          Tvoj zadatak je da razvrstas divlje i domace zivotinje u prave
+          Tvoj zadatak je da razvrstaš divlje i domaće životinje u odgovarajuće
           kategorije.
         </div>
         <div className="container">
@@ -78,28 +79,26 @@ class FarmLectionTwo extends Component {
             className="zivotinje-container"
             onDragEnter={this.onDragEnter}
             onDragOver={this.onDragOver}
-            onDrop={this.onFileDrop.bind(this, 'domace')}
+            onDrop={this.onFileDrop.bind(this, "domace")}
           >
-            Domoace zivotinje
+            Domaće životinje
           </div>
           <div
             className="zivotinje-container"
             onDragEnter={this.onDragEnter}
             onDragOver={this.onDragOver}
-            onDrop={this.onFileDrop.bind(this, 'divlje')}
+            onDrop={this.onFileDrop.bind(this, "divlje")}
           >
-            Divlje zivotinje
+            Divlje životinje
           </div>
         </div>
-        
+
         <div
           onDragEnter={this.onDragEnter}
           onDragOver={this.onDragOver}
-          onDrop={this.onFileDrop.bind(this, 'container')}
+          onDrop={this.onFileDrop.bind(this, "container")}
           className="section-zivotinje"
         >
-           
-            
           <img
             className="slike-zivotinja"
             id="detlic"
@@ -149,18 +148,26 @@ class FarmLectionTwo extends Component {
   }
 }
 
-function checkAnswer(state){
-    let result = true;
-    result =result && (state.detlic === state.divljasvinja && state.kornjaca === "divlje" && state.kornjaca );
-    result = result && (state.kokoska === state.koza && state.kokoska === "domace" && state.kokoska === state.koza)
-    return result;
+function checkAnswer(state) {
+  let result = true;
+  result =
+    result &&
+    (state.detlic === state.divljasvinja &&
+      state.kornjaca === "divlje" &&
+      state.kornjaca);
+  result =
+    result &&
+    (state.kokoska === state.koza &&
+      state.kokoska === "domace" &&
+      state.kokoska === state.koza);
+  return result;
 }
 function isAllItemsPlaced(state) {
-    let result = true;
-    Object.values(state).map(element => {
-        result = result && element != "container"
-    })
-    return result;
+  let result = true;
+  Object.values(state).map(element => {
+    result = result && element != "container";
+  });
+  return result;
 }
 
 export default FarmLectionTwo;

@@ -67,22 +67,15 @@ const options = {
   gradients: !$.isTouch,
   when: {
     turned: function(e, page) {
-      console.log("Current view: ", $(this).turn("view"));
     }
   }
 };
 
 const pages = [
   "http://ih0.redbubble.net/image.440904853.9850/flat,550x550,075,f.u1.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg",
-  "https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg",
-  "http://ih0.redbubble.net/image.440904853.9850/flat,550x550,075,f.u1.jpg"
 ];
 
 function App() {
-  console.log(HistoryLectionOne)
   return (
     <Turn options={options} id="flipbook" className="magazine">
       

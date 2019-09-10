@@ -14,7 +14,7 @@ const HistoryLectionTwo = () => {
         src="https://www.youtube.com/embed/NGYpu2EW6jo"
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

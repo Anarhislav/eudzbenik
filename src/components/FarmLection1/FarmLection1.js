@@ -4,7 +4,7 @@ class FarmLectionOne extends Component {
   render() {
     return (
       <div className="zivotinje1">
-        <div className="title-zivotinje1">Ucimo zivotinje</div>
+        <div className="title-zivotinje1">Učimo životinje</div>
         <div className="text-section-zivotinje1">
           Životinje su živa bića koja mogu samostalno da se kreću, hrane se
           drugim životinjskim ili biljnim organizmima, dišu, rađaju se i

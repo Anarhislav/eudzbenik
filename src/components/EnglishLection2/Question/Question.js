@@ -16,11 +16,11 @@ class Question extends Component {
                     {this.props.answers.map(element => {
                         if(this.state.clicked){
                             if(element == this.props.correctAnswer){
-                                return (<Button  onClick={this.onClick} color="primary"  variant="contained">{element}</Button>)
+                                return (<Button key={element}  onClick={this.onClick} color="primary"  variant="contained">{element}</Button>)
                             }
-                            return (<Button   onClick={this.onClick} color="secondary" variant="contained">{element}</Button>)
+                            return (<Button  key={element}  onClick={this.onClick} color="secondary" variant="contained">{element}</Button>)
                         }
-                        return (<Button onClick={this.onClick}  variant="contained">{element}</Button>)
+                        return (<Button  key={element} onClick={this.onClick}  variant="contained">{element}</Button>)
                     })}
                 </div>
             </div>
