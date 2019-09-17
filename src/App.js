@@ -9,6 +9,8 @@ import EnglishLectionOne from "./components/EnglishLection1/EnglishLectionOne";
 import EnglishLectionTwo from "./components/EnglishLection2/EnglishLectionTwo";
 import FarmLectionOne from "./components/FarmLection1/FarmLection1";
 import FarmLectionTwo from "./components/FarmLection2/FarmLection2";
+import GeoLectionOne from "./components/GeoLection1/GeoLection1";
+import GeoLectionTwo from "./components/GeoLection2/GeoLection2";
 
 import "./index.css";
 
@@ -89,6 +91,8 @@ function App() {
         <EnglishLectionTwo></EnglishLectionTwo>
         <FarmLectionOne></FarmLectionOne>
         <FarmLectionTwo></FarmLectionTwo>
+        <GeoLectionOne></GeoLectionOne>
+        <GeoLectionTwo></GeoLectionTwo>
         <div className="page" >
           <img src={pages[0]} alt="" />
         </div>
