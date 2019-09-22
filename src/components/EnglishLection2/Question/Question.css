@@ -1,11 +1,32 @@
 .english-title-question {
-    margin: 25px 5px;
-    color: black;
-    font-size: 25px;
-    background-color:rgba(241, 234, 234, 0.43);
-  }
+  margin: 25px 5px;
+  color: black;
+  font-size: 25px;
+  background-color: rgba(241, 234, 234, 0.43);
+}
 
 .buttons {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+}
+.dugme-rst {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+.q-title {
+  
+    margin: 10px;
+    color: black;
+    font-size: 17px;
+    background-color: rgba(241, 234, 234, 0.43);
+  
+}
+
+q-text {
+  margin: 10px;
+    color: black;
+    font-size: 17px;
+    background-color: rgba(241, 234, 234, 0.43);
+  
 }
