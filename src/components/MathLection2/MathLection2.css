@@ -1,0 +1,31 @@
+.pozadinaMath2{
+    background: url("mathPage.png") ;
+    background-size: auto;
+    background-size: 100% 100%;
+   width: 100%;
+   height: 100%;
+   -webkit-box-shadow: inset 23px 0px 32px -10px rgba(0,0,0,0.38);
+   -moz-box-shadow: inset 23px 0px 32px -10px rgba(0,0,0,0.38);
+   box-shadow: inset 23px 0px 32px -10px rgba(0,0,0,0.38);
+}
+
+.zadatak-mat{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 92px;
+}
+
+.tacno {
+    background-color: #a8e2a8;
+}
+
+.netacno {
+    background-color: #fbaaaa;
+}

@@ -5,7 +5,7 @@ class EnglishLectionTwo extends Component {
     state = {  }
     render() { 
         return (  
-            <div className= "background-english-page1">
+            <div className= "background-english-page2">
                 <div className="english-title">
                     Did you understand the text?
                 </div>

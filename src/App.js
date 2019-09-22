@@ -11,7 +11,8 @@ import FarmLectionOne from "./components/FarmLection1/FarmLection1";
 import FarmLectionTwo from "./components/FarmLection2/FarmLection2";
 import GeoLectionOne from "./components/GeoLection1/GeoLection1";
 import GeoLectionTwo from "./components/GeoLection2/GeoLection2";
-
+import MathLectionOne from './components/MathLection1/MathLection1';
+import MathLectionTwo from './components/MathLection2/MathLection2';
 import "./index.css";
 
 class Turn extends React.Component {
@@ -93,6 +94,8 @@ function App() {
         <FarmLectionTwo></FarmLectionTwo>
         <GeoLectionOne></GeoLectionOne>
         <GeoLectionTwo></GeoLectionTwo>
+        <MathLectionOne></MathLectionOne>
+        <MathLectionTwo></MathLectionTwo>
         <div className="page" >
           <img src={pages[0]} alt="" />
         </div>
