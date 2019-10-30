@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "3.0.0",
     "google-maps-react": "^2.0.2",
-    "jquery": "1.12.0",
+    "jquery": "3.4.0",
     "react": "16.8.0",
     "react-audio-player": "^0.11.1",
     "react-dnd": "^9.3.4",
